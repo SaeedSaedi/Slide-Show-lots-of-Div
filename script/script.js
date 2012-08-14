@@ -22,7 +22,7 @@ $(function(){
 
 	cbg = function(n){
 		part.each(function(i){
-			part.eq(i).animate({backgroundImage:'url(\'image/pic'+n+'.jpg\')'},i*300)
+			$(this).animate({backgroundImage:'url(\'image/pic'+n+'.jpg\')'},i*200)
 		})
 	};
 	
