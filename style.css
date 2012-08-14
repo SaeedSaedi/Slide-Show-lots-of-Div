@@ -1,2 +1,38 @@
 @charset "utf-8";
 /* Css document */
+div{
+	outline: 1px red solid;
+}
+div > div{
+	outline: 1px magenta solid;
+}
+div > div > div{
+	outline: 1px orange solid;
+}
+div > div > div > div{
+	outline: 1px cyan solid;
+}
+div > div > div > div > div{
+	outline: 1px white solid;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: black;
+}
+div.container{
+	min-height: 400px;
+	padding: 1px;
+}
+div.main{
+	width: 450px;
+	margin: 0 auto;
+	height: 300px;
+	margin-top: 30px;
+}
+div.slideshow{
+	width: 450px;
+	height: 300px;
+}
