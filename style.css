@@ -1,20 +1,6 @@
 @charset "utf-8";
 /* Css document */
-div{
-	outline: 1px red solid;
-}
-div > div{
-	outline: 1px magenta solid;
-}
-div > div > div{
-	outline: 1px orange solid;
-}
-div > div > div > div{
-	outline: 1px cyan solid;
-}
-div > div > div > div > div{
-	outline: 1px white solid;
-}
+
 *{
 	padding: 0px;
 	margin: 0px;
@@ -40,4 +26,30 @@ div.slideshow div.part{
 	width: 112.5px;
 	height: 100px;
 	float: left;
+}
+div.footer{
+	width: 450px;
+	height: 100px;
+	margin: 0 auto;
+}
+div.footer div.menu{
+	width: 230px;
+	height: inherit;
+	margin: 0 auto;
+}
+div.menu ul{
+	width: inherit;
+	height: inherit;
+	list-style-type: none;
+}
+div.menu ul li{
+	width: 50px;
+	height: 50px;
+	-webkit-box-shadow:inset 0px 0px 10px #68e;
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+div.menu ul li.active{
+	-webkit-box-shadow:inset 0px 0px 30px #68e;
 }
