@@ -6,4 +6,3 @@ A Slide show template
 Use HTML , CSS and JS to make this Slideshow 
 
 Plz open it with GoogleChrome !
-https://github.com/SaeedSaedi/Slide-Show-lots-of-Div
