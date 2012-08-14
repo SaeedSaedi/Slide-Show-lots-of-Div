@@ -7,14 +7,14 @@ $(function(){
 
 	part.each(function(i){
 		if(i<4){
-			$(this).css({backgroundPosition:(i)*-112.5+"px 0px"})
+			$(this).css({backgroundPosition:(i)*-112.5+"px 0px"});
 		}
 		else
 		if(i<8){
-			$(this).css({backgroundPosition:(i)*-112.5+"px -100px"})
+			$(this).css({backgroundPosition:(i)*-112.5+"px -100px"});
 		}
 		else{
-			$(this).css({backgroundPosition:(i)*-112.5+"px -200px"})
+			$(this).css({backgroundPosition:(i)*-112.5+"px -200px"});
 		}
 	});
 
@@ -22,7 +22,7 @@ $(function(){
 
 	cbg = function(n){
 		part.each(function(i){
-			$(this).animate({backgroundImage:'url(\'image/pic'+n+'.jpg\')'},i*200)
+			$(this).animate({backgroundImage:'url(\'image/pic'+n+'.jpg\')'},i*200);
 		})
 	};
 	
