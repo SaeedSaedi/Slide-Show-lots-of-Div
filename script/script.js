@@ -18,9 +18,13 @@ $(function(){
 		}
 	});
 
+	// changeBackground 
 
-
-
-
-
+	cbg = function(n){
+		part.each(function(i){
+			part.eq(i).animate({backgroundImage:'url(\'image/pic'+n+'.jpg\')'},i*300)
+		})
+	};
+	
+	cbg(1);	
 });
