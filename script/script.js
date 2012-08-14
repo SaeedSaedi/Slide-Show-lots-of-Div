@@ -2,7 +2,7 @@
 
 $(function(){
 	var part = $('div.slideshow div.part');
-
+	var li = $('div.menu ul li');
 	//set background position of each part
 
 	part.each(function(i){
@@ -26,5 +26,21 @@ $(function(){
 		})
 	};
 	
-	cbg(1);	
+	//Set menu JS
+	var cr = 0
+	li.each(function(i){
+		$(this).click(function(){
+			gotopic(i);
+		});
+	});
+
+	gotopic = function(n){
+		li.eq(cr).removeClass('active');
+		li.eq(n).addClass('active');
+		cbg(n);
+		cr = n;
+	}
+	gotopic(0);
+
+
 });
